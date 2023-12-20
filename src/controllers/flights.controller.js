@@ -4,6 +4,13 @@ import { db } from "../database/database.connection.js";
 import moment from "moment";
 import dayjs from "dayjs";
 
+function getCurrentTimestamp() {
+    return dayjs().format('YYYY-MM-DD HH:mm:ss');
+}
+
+const createdAt = getCurrentTimestamp();
+console.log(createdAt);
+
 const postFlights = async (req, res) => {
     const { origin, destination, date } = req.body;
 
