@@ -1,3 +1,5 @@
+import { db } from "../database/database.connection";
+
 const postPasTravel = async (req, res) => {
     try {
         const { name } = req.query;
