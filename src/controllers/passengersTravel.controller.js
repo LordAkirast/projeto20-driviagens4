@@ -1,4 +1,4 @@
-import { db } from "../database/database.connection";
+import { db } from "../database/database.connection.js";
 
 const postPasTravel = async (req, res) => {
     try {
