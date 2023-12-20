@@ -1,6 +1,7 @@
 
 import { createFlights } from "../schemas/schemas.js";
 import { db } from "../database/database.connection.js";
+import moment from "moment";
 
 const postFlights = async (req, res) => {
     const { origin, destination, date } = req.body;
