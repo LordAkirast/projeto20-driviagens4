@@ -1,4 +1,4 @@
-import { db } from '../database/database.connection';
+import { db } from '../database/database.connection.js';
 
 const findCityByName = async (name) => {
     const query = 'SELECT * FROM cities WHERE name = $1';
