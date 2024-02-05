@@ -30,4 +30,4 @@ const postCities = async (req, res) => {
     }
 }
 
-export default { postCities };
+export default postCities;

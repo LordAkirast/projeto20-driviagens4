@@ -7,11 +7,11 @@ import bcrypt from "bcrypt"
 import { db } from "./database/database.connection.js";
 import moment from "moment";
 import test from "./controllers/test.js";
-import postCities from "./controllers/cities.controller.js";
 import postTravels from "./controllers/travels.controller.js";
 import { getFlights, postFlights } from "./controllers/flights.controller.js";
 import postPasTravel from "./controllers/passengersTravel.controller.js";
 import postPassengers from "./controllers/passsengers.controller.js";
+import postCities from "./controllers/cities.controller.js";
 
 const app = express();
 app.use(cors());
