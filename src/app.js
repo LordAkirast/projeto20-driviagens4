@@ -13,6 +13,7 @@ import postPasTravel from "./controllers/passengersTravel.controller.js";
 import postPassengers from "./controllers/passsengers.controller.js";
 import postCities from "./controllers/cities.controller.js";
 
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -57,7 +58,8 @@ app.post('/cities/delete', async (req, res) => {
     }
 });
 
-app.post('/cities', postCities)
+//app.post('/cities', postCities)
+app.use('/cities', postCities);
 
 app.post('/flights', postFlights)
 
